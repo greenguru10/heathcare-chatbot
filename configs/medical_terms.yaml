@@ -1,0 +1,63 @@
+abbreviations:
+  bp:
+    expansion: blood pressure
+  bmi:
+    expansion: body mass index
+  cpr:
+    expansion: cardiopulmonary resuscitation
+  uti:
+    expansion: urinary tract infection
+  uri:
+    expansion: upper respiratory infection
+  ocd:
+    expansion: obsessive compulsive disorder
+  pcos:
+    expansion: polycystic ovary syndrome
+  copd:
+    expansion: chronic obstructive pulmonary disease
+  tb:
+    expansion: tuberculosis
+  ors:
+    expansion: oral rehydration salts
+  dm:
+    expansion: diabetes mellitus
+  htn:
+    expansion: hypertension
+  gerd:
+    expansion: gastroesophageal reflux disease
+
+synonyms:
+  high_blood_pressure:
+    - hypertension
+    - high bp
+    - elevated blood pressure
+  heart_attack:
+    - myocardial infarction
+    - coronary thrombosis
+  shortness_of_breath:
+    - breathlessness
+    - difficulty breathing
+    - dyspnea
+  diabetes:
+    - diabetes mellitus
+    - high blood sugar
+    - hyperglycemia
+  vaccination:
+    - immunization
+    - vaccine
+    - inoculation
+    - booster shot
+  depression:
+    - depressive disorder
+    - low mood
+    - major depression
+  dehydration:
+    - fluid loss
+    - water deficit
+  fever:
+    - pyrexia
+    - high body temperature
+    - elevated temperature
+  stroke:
+    - cerebrovascular accident
+    - brain attack

@@ -1,0 +1,27 @@
+bm25:
+  k1: 1.2
+  b: 0.75
+  candidate_k: 40
+
+vector:
+  dimension: 384
+  metric: "cosine"
+  candidate_k: 40
+
+fusion:
+  rrf_k: 60
+  weight_rrf: 0.45
+  weight_reranker: 0.25
+  weight_authority: 0.15
+  weight_recency: 0.10
+  weight_metadata: 0.05
+
+reranking:
+  enabled: true
+  top_n: 30
+  final_evidence_k: 4
+  min_relevance_score: 0.35
+
+evidence:
+  max_chunks_per_document: 2
+  min_total_evidence_score: 0.45

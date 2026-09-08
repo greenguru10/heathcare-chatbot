@@ -1,0 +1,116 @@
+sources:
+  - id: "e1000000-0000-0000-0000-000000000001"
+    name: "World Health Organization"
+    base_url: "https://www.who.int"
+    authority_tier: "A"
+    authority_score: 1.00
+    source_type: "government"
+    license_notes: "WHO Open Access / Public Health Guidance"
+    active: true
+
+  - id: "e1000000-0000-0000-0000-000000000002"
+    name: "Ministry of Health and Family Welfare, India"
+    base_url: "https://www.mohfw.gov.in"
+    authority_tier: "A"
+    authority_score: 1.00
+    source_type: "government"
+    license_notes: "Government of India Open Access Public Domain"
+    active: true
+
+  - id: "e1000000-0000-0000-0000-000000000003"
+    name: "Indian Council of Medical Research (ICMR)"
+    base_url: "https://www.icmr.gov.in"
+    authority_tier: "A"
+    authority_score: 1.00
+    source_type: "academic"
+    license_notes: "ICMR Public Guidance & Advisories"
+    active: true
+
+  - id: "e1000000-0000-0000-0000-000000000004"
+    name: "Centers for Disease Control and Prevention (CDC)"
+    base_url: "https://www.cdc.gov"
+    authority_tier: "A"
+    authority_score: 1.00
+    source_type: "government"
+    license_notes: "US Government Public Domain"
+    active: true
+
+  - id: "e1000000-0000-0000-0000-000000000005"
+    name: "MedlinePlus (National Library of Medicine / NIH)"
+    base_url: "https://medlineplus.gov"
+    authority_tier: "A"
+    authority_score: 1.00
+    source_type: "government"
+    license_notes: "US National Library of Medicine Public Health Education"
+    active: true
+
+  - id: "e1000000-0000-0000-0000-000000000006"
+    name: "National Health Service (NHS)"
+    base_url: "https://www.nhs.uk"
+    authority_tier: "A"
+    authority_score: 1.00
+    source_type: "government"
+    license_notes: "NHS Patient Information Open Government Licence"
+    active: true
+
+categories:
+  - id: 1
+    slug: "anatomy_and_physiology"
+    display_name: "Anatomy and Physiology"
+    description: "Structures and systems of the human body"
+  - id: 2
+    slug: "common_health_concepts"
+    display_name: "Common Health Concepts"
+    description: "Fundamental health terms and concepts"
+  - id: 3
+    slug: "preventive_health"
+    display_name: "Preventive Health"
+    description: "Disease prevention, health screening, and risk reduction"
+  - id: 4
+    slug: "nutrition"
+    display_name: "Nutrition"
+    description: "Dietary guidelines, balanced diets, and nutrient intake"
+  - id: 5
+    slug: "physical_activity"
+    display_name: "Physical Activity"
+    description: "Exercise, movement, and physical fitness guidelines"
+  - id: 6
+    slug: "mental_health_education"
+    display_name: "Mental Health Education"
+    description: "Emotional well-being, stress, anxiety, depression education"
+  - id: 7
+    slug: "maternal_and_child_health"
+    display_name: "Maternal and Child Health"
+    description: "Pregnancy education, infant care, and child development"
+  - id: 8
+    slug: "infectious_disease_education"
+    display_name: "Infectious Disease Education"
+    description: "Transmission, symptoms, and prevention of communicable diseases"
+  - id: 9
+    slug: "chronic_condition_education"
+    display_name: "Chronic Condition Education"
+    description: "Hypertension, diabetes, asthma, and long-term health education"
+  - id: 10
+    slug: "medication_safety_education"
+    display_name: "Medication Safety Education"
+    description: "Safe storage, adherence concepts, and general safety facts"
+  - id: 11
+    slug: "vaccination"
+    display_name: "Vaccination"
+    description: "Immunization schedules, mechanism of action, and vaccine facts"
+  - id: 12
+    slug: "first_aid_education"
+    display_name: "First Aid Education"
+    description: "Basic educational first aid concepts and emergency prevention"
+  - id: 13
+    slug: "public_health"
+    display_name: "Public Health"
+    description: "Epidemiology, hygiene, water safety, and health campaigns"
+  - id: 14
+    slug: "healthcare_navigation"
+    display_name: "Healthcare Navigation"
+    description: "Navigating clinical care, specialist roles, and health systems"
+  - id: 15
+    slug: "medical_terms"
+    display_name: "Medical Terms"
+    description: "Definitions and explanations of clinical terminology"

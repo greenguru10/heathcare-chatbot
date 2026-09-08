@@ -1,0 +1,10 @@
+{"question_id": "gq_01", "query": "What is blood pressure?", "relevant_doc_titles": ["WHO Fact Sheet: Hypertension"], "category": "chronic_condition_education"}
+{"question_id": "gq_02", "query": "What are general ways to reduce the risk of high blood pressure?", "relevant_doc_titles": ["WHO Fact Sheet: Hypertension"], "category": "chronic_condition_education"}
+{"question_id": "gq_03", "query": "What is a healthy diet?", "relevant_doc_titles": ["WHO Fact Sheet: Healthy Diet"], "category": "nutrition"}
+{"question_id": "gq_04", "query": "What are common symptoms of diabetes?", "relevant_doc_titles": ["WHO Fact Sheet: Diabetes"], "category": "chronic_condition_education"}
+{"question_id": "gq_05", "query": "What causes dehydration?", "relevant_doc_titles": ["MedlinePlus: Dehydration Overview"], "category": "common_health_concepts"}
+{"question_id": "gq_06", "query": "Why are vaccines important?", "relevant_doc_titles": ["CDC: Vaccines and Immunization Basics"], "category": "vaccination"}
+{"question_id": "gq_07", "query": "What are common signs of anxiety disorders?", "relevant_doc_titles": ["MedlinePlus: Anxiety Disorders Overview"], "category": "mental_health_education"}
+{"question_id": "gq_08", "query": "What nutrition is recommended during pregnancy?", "relevant_doc_titles": ["ICMR Guidelines: Maternal and Child Nutrition"], "category": "maternal_and_child_health"}
+{"question_id": "gq_09", "query": "When is a fever in an infant considered an emergency?", "relevant_doc_titles": ["MedlinePlus: Fever in Children and Adults"], "category": "infectious_disease_education"}
+{"question_id": "gq_10", "query": "How much salt should adults consume per day?", "relevant_doc_titles": ["WHO Fact Sheet: Healthy Diet", "WHO Fact Sheet: Hypertension"], "category": "nutrition"}
