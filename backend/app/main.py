@@ -17,16 +17,22 @@ from backend.app.core.exceptions import HealthcareAppException
 async def lifespan(app: FastAPI):
     configure_logging()
     logger.info("Initializing database schema...")
-    init_db()
+    try:
+        init_db()
+    except Exception as e:
+        logger.error("Database schema init warning (will retry on query)", error=str(e))
     
     # Initialize in-memory hybrid search indexes from DB
     logger.info("Building hybrid retrieval indexes...")
-    db = SessionLocal()
     try:
-        count = index_manager.build_indexes(db)
-        logger.info("Hybrid indexes built successfully", active_chunks=count)
-    finally:
-        db.close()
+        db = SessionLocal()
+        try:
+            count = index_manager.build_indexes(db)
+            logger.info("Hybrid indexes built successfully", active_chunks=count)
+        finally:
+            db.close()
+    except Exception as e:
+        logger.error("Hybrid index build warning (will build on-demand)", error=str(e))
 
     yield
 
