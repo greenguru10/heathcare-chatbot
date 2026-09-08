@@ -1,5 +1,5 @@
 from typing import Optional
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, Field
 
 
 class TokenResponse(BaseModel):
@@ -10,12 +10,12 @@ class TokenResponse(BaseModel):
 
 
 class LoginRequest(BaseModel):
-    email: EmailStr
+    email: str = Field(..., description="User email address")
     password: str
 
 
 class UserCreate(BaseModel):
-    email: EmailStr
+    email: str = Field(..., description="User email address")
     password: str
     role: str = "user"
 
