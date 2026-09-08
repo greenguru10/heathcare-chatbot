@@ -34,8 +34,13 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.error("Hybrid index build warning (will build on-demand)", error=str(e))
 
+    # Launch background Uptime Keep-Alive Bot
+    from backend.app.services.uptime_service import uptime_bot
+    uptime_bot.start()
+
     yield
 
+    uptime_bot.stop()
     logger.info("Shutting down application...")
 
 

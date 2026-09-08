@@ -93,5 +93,10 @@ class Settings(BaseSettings):
     DEFAULT_REGION: str = "IN"  # IN, US, UK, DEFAULT
     LOG_LEVEL: str = "INFO"
 
+    # Uptime Keep-Alive Bot
+    UPTIME_BOT_ENABLED: bool = True
+    UPTIME_PING_URL: str = "https://heathcare-chatbot-2.onrender.com/api/v1/health"
+    UPTIME_PING_INTERVAL_MINUTES: int = 10
+
 
 settings = Settings()
