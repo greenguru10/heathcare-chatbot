@@ -1,0 +1,13 @@
+.git
+.gitignore
+.env
+.env.local
+.pytest_cache
+*.sqlite
+*.sqlite3
+*.db
+node_modules
+frontend/node_modules
+__pycache__
+*.pyc
+*.pyo
