@@ -1,7 +1,8 @@
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Union, Any
+import json
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import Field
+from pydantic import Field, field_validator
 
 
 class Settings(BaseSettings):
@@ -38,7 +39,28 @@ class Settings(BaseSettings):
         "http://localhost:3000",
         "http://localhost:8000",
         "http://127.0.0.1:8000",
+        "*"
     ]
+
+    @field_validator("ALLOWED_ORIGINS", mode="before")
+    @classmethod
+    def assemble_cors_origins(cls, v: Any) -> List[str]:
+        if isinstance(v, str):
+            v_clean = v.strip()
+            if not v_clean:
+                return ["*"]
+            if (v_clean.startswith("[") and v_clean.endswith("]")) or (v_clean.startswith("(") and v_clean.endswith(")")):
+                try:
+                    parsed = json.loads(v_clean)
+                    if isinstance(parsed, list):
+                        return [str(item) for item in parsed]
+                except Exception:
+                    pass
+            # Comma-separated or single string
+            return [item.strip().strip("'\"") for item in v_clean.split(",") if item.strip()]
+        elif isinstance(v, (list, tuple, set)):
+            return [str(item) for item in v]
+        return ["*"]
 
     # LLM Gateway
     LLM_PROVIDER: str = "mock"  # options: mock, openai_compatible, gemini, anthropic, ollama
